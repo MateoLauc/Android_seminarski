@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_korisnicki_profil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.test.gymjunky.KorisnickiProfil">
+
+        <include
+            layout="@layout/navigation_action"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></include>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="80dp"
+            android:text="Osobne informacije"
+            android:textSize="24dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/imageView4"
+            android:layout_alignStart="@+id/imageView4"
+            android:layout_below="@+id/imageView4"
+            android:layout_marginTop="32dp"
+            app:srcCompat="@drawable/password" />
+
+        <EditText
+            android:id="@+id/lozinka_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView5"
+            android:layout_alignEnd="@+id/ime_input"
+            android:layout_alignRight="@+id/ime_input"
+            android:backgroundTint="#ff5722"
+            android:ems="15"
+
+            android:fontFamily="sans-serif-medium"
+            android:hint="Lozinka"
+            android:inputType="textPassword"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/imageView5"
+            android:layout_alignStart="@+id/imageView5"
+            android:layout_below="@+id/imageView5"
+            android:layout_marginTop="34dp"
+            app:srcCompat="@drawable/email" />
+
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView6"
+            android:layout_alignLeft="@+id/lozinka_input"
+            android:layout_alignStart="@+id/lozinka_input"
+            android:backgroundTint="#ff5722"
+            android:ems="15"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/imageView6"
+            android:layout_alignStart="@+id/imageView6"
+            android:layout_below="@+id/imageView6"
+            android:layout_marginTop="32dp"
+            app:srcCompat="@drawable/visina" />
+
+        <EditText
+            android:id="@+id/visina_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView7"
+            android:layout_alignEnd="@+id/email_input"
+            android:layout_alignRight="@+id/email_input"
+            android:backgroundTint="#ff5722"
+            android:ems="15"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Visina"
+            android:inputType="textPersonName"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/imageView7"
+            android:layout_alignStart="@+id/imageView7"
+            android:layout_below="@+id/imageView7"
+            android:layout_marginTop="36dp"
+            app:srcCompat="@drawable/tezina" />
+
+        <EditText
+            android:id="@+id/tezina_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView8"
+            android:layout_alignEnd="@+id/visina_input"
+            android:layout_alignRight="@+id/visina_input"
+            android:backgroundTint="#ff5722"
+            android:ems="15"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Tezina"
+            android:inputType="textPersonName"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/ime_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView5"
+            android:layout_marginLeft="16dp"
+            android:layout_toEndOf="@+id/imageView4"
+            android:layout_toRightOf="@+id/imageView4"
+            android:backgroundTint="#ff5722"
+            android:ems="15"
+            android:inputType="none"
+            android:editable="false"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Korisničko ime"
+            android:layout_marginRight="16dp"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="24dp"
+            app:srcCompat="@drawable/user"
+            android:layout_below="@+id/textView"
+            android:layout_marginLeft="16dp"
+
+             />
+
+        <Button
+            android:id="@+id/btn_Spremi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:width="124dp"
+            android:height="42dp"
+            android:background="@drawable/btn_background_style"
+            android:text="Spremi"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="43dp" />
+
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nv1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu">
+        <include
+            layout="@layout/slika_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"></include>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_program_detalji"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.test.gymjunky.ProgramDetalji">
+    <include layout="@layout/navigation_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <TextView
+        android:text="Broj treninga:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/opis_text"
+        android:layout_alignLeft="@+id/opis_text"
+        android:layout_alignStart="@+id/opis_text"
+
+        android:id="@+id/textView4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Naziv_txt"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+      />
+
+    <TextView
+        android:text="TextView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="31dp"
+        android:id="@+id/kategorija_txt"
+        android:fontFamily="sans-serif"
+        android:textSize="17dp"
+        android:layout_below="@+id/Naziv_txt"
+        android:layout_alignLeft="@+id/Naziv_txt"
+        android:layout_alignStart="@+id/Naziv_txt" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="13dp"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:layout_gravity="center_vertical|right"
+        android:id="@+id/opis_text"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kategorija_txt"
+        android:layout_alignLeft="@+id/kategorija_txt"
+        android:layout_marginBottom="12dp"
+        android:layout_alignStart="@+id/kategorija_txt" />
+
+    <TextView
+        android:text="Vrijeme trajanja:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/brojTreninga_txt"
+        android:layout_alignLeft="@+id/vrijeme_txt"
+        android:layout_alignStart="@+id/vrijeme_txt" />
+
+    <Button
+        android:text="Pridruži se"
+        android:layout_width="124dp"
+        android:layout_height="42dp"
+        android:fontFamily="sans-serif-medium"
+        android:background="@drawable/btn_background_style"
+        android:textColor="#ffffff"
+        android:id="@+id/btn_pridruzivanje"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/vrijeme_txt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:id="@+id/brojTreninga_txt"
+        android:layout_below="@+id/textView4"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_marginTop="13dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:textSize="15sp"
+        android:id="@+id/vrijeme_txt"
+        android:layout_below="@+id/textView6"
+        android:layout_alignLeft="@+id/brojTreninga_txt"
+        android:layout_alignStart="@+id/brojTreninga_txt"
+        android:layout_marginTop="13dp" />
+</RelativeLayout>
+    <android.support.design.widget.NavigationView android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/nv1"
+        android:layout_gravity="start"
+        app:menu="@menu/navigation_menu">
+        <include
+            layout="@layout/slika_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"></include>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>
